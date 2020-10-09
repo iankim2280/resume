@@ -1,0 +1,200 @@
+@charset "utf-8";
+
+// Import a Google Font
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
+
+// Set your brand colors
+$purple: #8a4d76;
+$pink: #fa7c91;
+$brown: #757763;
+$beige-light: #d0d1cd;
+$beige-lighter: #eff0eb;
+$black: #000000;
+
+// Update Bulma's global variables
+$family-sans-serif: "Nunito", sans-serif;
+$grey-dark: $brown;
+$grey-light: $beige-light;
+$primary: $purple;
+$link: $pink;
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+
+// Update some of Bulma's component variables
+$body-background-color: $beige-lighter;
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+
+// Import only what you need from Bulma
+@import "../node_modules/bulma/sass/utilities/_all.sass";
+@import "../node_modules/bulma/sass/base/_all.sass";
+@import "../node_modules/bulma/sass/elements/button.sass";
+@import "../node_modules/bulma/sass/elements/container.sass";
+@import "../node_modules/bulma/sass/elements/title.sass";
+@import "../node_modules/bulma/sass/form/_all.sass";
+@import "../node_modules/bulma/sass/components/navbar.sass";
+@import "../node_modules/bulma/sass/layout/hero.sass";
+@import "../node_modules/bulma/sass/layout/section.sass";
+
+// custom variables
+
+$between: space-between;
+$around: space-around;
+$border-black: 1px solid black;
+$border-lightgrey: 0.1px solid $grey-light;
+
+body {
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    Helvetica Neue, sans-serif;
+}
+.border-b-lg {
+  border-bottom: $border-lightgrey;
+}
+.container {
+  // display: flex;
+  max-width: 70vw;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  .mainContainer {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: $border-black;
+    // height: 100vh;
+    header {
+      background-color: #ecc38d;
+      padding: 40px;
+      .innerBox {
+        background-color: #fff;
+        border: $border-lightgrey;
+        padding: 25px;
+        .innerBorder {
+          border: $border-black;
+          padding: 18px 0;
+        }
+      }
+    }
+    main {
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+
+        .grid {
+          border: $border-black;
+          padding: 30px;
+          background-color: rgb(196, 196, 223);
+          text-align: start;
+          .title {
+            width: 30%;
+            padding-bottom: 10px;
+            border-bottom: 1px black solid;
+          }
+          .info {
+            font: 1.1rem roboto, $family-sans-serif;
+            color: $black;
+          }
+        }
+        .grid1 {
+          grid-area: 1 / 1 / 2 / 2;
+        }
+        .grid2 {
+          grid-area: 2 / 1 / 3 / 2;
+        }
+        .grid3 {
+          grid-area: 3 / 1 / 4 / 2;
+        }
+        .grid4 {
+          grid-area: 1 / 2 / 4 / 3;
+          background-color: white;
+          padding: 30px;
+          text-align: start;
+          .title {
+            width: 30%;
+            padding-bottom: 10px;
+            border-bottom: 1px black solid;
+          }
+          .experience {
+            margin-top: 5px;
+          }
+          .subTitle {
+            font-size: 1.25rem;
+            color: rgb(46, 137, 160);
+            padding-bottom: 5px;
+          }
+          li {
+            font: 1.1rem roboto, $family-sans-serif;
+            color: $black;
+            padding-bottom: 5px;
+            a {
+              color: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    .mainContainer {
+      main {
+        .grid-container {
+          .title {
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 850px) {
+  .container {
+    .mainContainer {
+      main {
+        .grid-container {
+          .title {
+            width: 70%;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 850px) {
+  .container {
+    .mainContainer {
+      main {
+        .grid-container {
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: repeat(6, 1fr);
+          grid-column-gap: 0px;
+          grid-row-gap: 0px;
+          .grid1 {
+            grid-area: 1 / 1 / 2 / 2;
+          }
+          .grid2 {
+            grid-area: 2 / 1 / 3 / 2;
+          }
+          .grid3 {
+            grid-area: 3 / 1 / 4 / 2;
+          }
+          .grid4 {
+            grid-area: 4 / 1 / 7 / 2;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 650px) {
+}
+@media only screen and (max-width: 550px) {
+}
+@media only screen and (max-width: 450px) {
+}
