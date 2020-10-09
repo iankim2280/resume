@@ -3937,6 +3937,8 @@ body {
       grid-template-rows: repeat(3, 1fr);
       grid-column-gap: 0px;
       grid-row-gap: 0px; }
+      .container .mainContainer main .grid-container a {
+        color: royalblue; }
       .container .mainContainer main .grid-container .grid {
         border: 1px solid black;
         padding: 30px;
@@ -3949,6 +3951,8 @@ body {
         .container .mainContainer main .grid-container .grid .info {
           font: 1.1rem roboto, "Nunito", sans-serif;
           color: #000000; }
+          .container .mainContainer main .grid-container .grid .info li {
+            padding-bottom: 5px; }
       .container .mainContainer main .grid-container .grid1 {
         grid-area: 1 / 1 / 2 / 2; }
       .container .mainContainer main .grid-container .grid2 {
@@ -3968,7 +3972,7 @@ body {
           margin-top: 5px; }
         .container .mainContainer main .grid-container .grid4 .subTitle {
           font-size: 1.25rem;
-          color: #2e89a0;
+          color: #234c57;
           padding-bottom: 5px; }
         .container .mainContainer main .grid-container .grid4 li {
           font: 1.1rem roboto, "Nunito", sans-serif;
@@ -3978,11 +3982,11 @@ body {
             color: none; }
 
 @media only screen and (max-width: 1000px) {
-  .container .mainContainer main .grid-container .grid .title {
+  .container .mainContainer main .grid-container .title {
     width: 50%; } }
 
 @media only screen and (max-width: 850px) {
-  .container .mainContainer main .grid-container .grid .title {
+  .container .mainContainer main .grid-container .title {
     width: 70%; } }
 
 @media only screen and (max-width: 850px) {

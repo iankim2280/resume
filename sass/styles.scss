@@ -82,6 +82,9 @@ body {
         grid-template-rows: repeat(3, 1fr);
         grid-column-gap: 0px;
         grid-row-gap: 0px;
+        a {
+          color: royalblue;
+        }
 
         .grid {
           border: $border-black;
@@ -96,6 +99,9 @@ body {
           .info {
             font: 1.1rem roboto, $family-sans-serif;
             color: $black;
+            li {
+              padding-bottom: 5px;
+            }
           }
         }
         .grid1 {
@@ -122,7 +128,7 @@ body {
           }
           .subTitle {
             font-size: 1.25rem;
-            color: rgb(46, 137, 160);
+            color: rgb(35, 76, 87);
             padding-bottom: 5px;
           }
           li {
