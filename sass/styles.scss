@@ -119,7 +119,7 @@ body {
           padding: 30px;
           text-align: start;
           .title {
-            width: 30%;
+            width: 40%;
             padding-bottom: 10px;
             border-bottom: 1px black solid;
           }
@@ -151,20 +151,12 @@ body {
       main {
         .grid-container {
           .title {
-            width: 50%;
-          }
-        }
-      }
-    }
-  }
-}
-@media only screen and (max-width: 850px) {
-  .container {
-    .mainContainer {
-      main {
-        .grid-container {
-          .title {
             width: 70%;
+          }
+          .grid4 {
+            .title {
+              width: 70%;
+            }
           }
         }
       }
@@ -197,10 +189,4 @@ body {
       }
     }
   }
-}
-@media only screen and (max-width: 650px) {
-}
-@media only screen and (max-width: 550px) {
-}
-@media only screen and (max-width: 450px) {
 }
