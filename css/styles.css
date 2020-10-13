@@ -3913,7 +3913,7 @@ body {
   border-bottom: 0.1px solid #d0d1cd; }
 
 .container {
-  max-width: 70vw;
+  max-width: 60vw;
   margin-top: 50px;
   margin-bottom: 50px; }
   .container .mainContainer {
@@ -3965,7 +3965,7 @@ body {
         padding: 30px;
         text-align: start; }
         .container .mainContainer main .grid-container .grid4 .title {
-          width: 30%;
+          width: 40%;
           padding-bottom: 10px;
           border-bottom: 1px black solid; }
         .container .mainContainer main .grid-container .grid4 .experience {
@@ -3983,17 +3983,15 @@ body {
 
 @media only screen and (max-width: 1000px) {
   .container .mainContainer main .grid-container .title {
-    width: 50%; } }
-
-@media only screen and (max-width: 850px) {
-  .container .mainContainer main .grid-container .title {
+    width: 70%; }
+  .container .mainContainer main .grid-container .grid4 .title {
     width: 70%; } }
 
 @media only screen and (max-width: 850px) {
   .container .mainContainer main .grid-container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(7, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px; }
     .container .mainContainer main .grid-container .grid1 {
@@ -4003,4 +4001,4 @@ body {
     .container .mainContainer main .grid-container .grid3 {
       grid-area: 3 / 1 / 4 / 2; }
     .container .mainContainer main .grid-container .grid4 {
-      grid-area: 4 / 1 / 7 / 2; } }
+      grid-area: 4 / 1 / 8 / 2; } }
